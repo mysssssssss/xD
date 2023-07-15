@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Invitación de Cumpleaños</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 24px; /* Tamaño de letra más grande */
+            background-color: #ffe6f2; /* Color de fondo rosa palo claro */
+            background-image: url("https://http2.mlstatic.com/D_NQ_NP_2X_657994-MLC41277482858_032020-F.jpg");
+            background-repeat: repeat;
+            background-size: 200px; /* Tamaño de las imágenes */
+            background-position: center;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .greeting {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff69b4; /* Color de letra rosa */
+        }
+        
+        .image {
+            width: 500px;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50; /* Color de fondo del botón */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        
+        .noPuedoContainer {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .noPuedoContainer.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function mostrarNoPuedo() {
+            window.location.href = "https://www.nairaland.com/attachments/2463485_5574677_jpegec2dc666edd93e4ca55677e239239511";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="greeting">Hola bendiciones</h2>
+            <img src="https://i.pinimg.com/736x/9f/55/23/9f5523b732e50e63c585281e6c986b44.jpg" alt="Imagen de Cumpleaños" class="image">
+            <p class="info">Fecha: <span id="date"></span></p>
+            <p class="info">Hora: <span id="time">1:00 PM</span></p>
+            <p class="info">Lugar: Buffet</p>
+            <div class="buttonContainer">
+                <a href="https://www.google.com.mx/maps/place/Panda+Junior/@-33.4449987,-70.6389917,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c577b52509f1:0x5a6e73a05ae0aa08!8m2!3d-33.4450032!4d-70.6364168!16s%2Fg%2F11bw20cthx?entry=ttu" target="_blank" class="button">Ver Ubicación</a>
+                <button class="button" onclick="mostrarNoPuedo()">No puedo :(</button>
+                <a href="confirmacion.html" class="button">Confirmar Asistencia</a>
+            </div>
+            <div class="noPuedoContainer">
+                <img src="https://th.bing.com/th/id/OIP.DU_-9X_xp8opPinU_CT0hgAAAA?pid=ImgDet&rs=1" alt="Imagen No Puedo" class="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

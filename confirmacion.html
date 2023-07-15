@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmación de Asistencia</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 24px; /* Tamaño de letra más grande */
+            background-color: #ffe6f2; /* Color de fondo rosa palo claro */
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .greeting {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff69b4; /* Color de letra rosa */
+        }
+        
+        .image {
+            width: 500px;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50; /* Color de fondo del botón */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .names {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .names ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .names ul li {
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .image-container.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function mostrarImagen() {
+            var namesContainer = document.getElementById("namesContainer");
+            var imageContainer = document.getElementById("imageContainer");
+
+            namesContainer.style.display = "none";
+            imageContainer.classList.add("active");
+        }
+
+        function enviar() {
+            mostrarImagen();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="greeting">Confirmación de Asistencia</h2>
+            <div id="namesContainer">
+                <p>Por favor, selecciona tu nombre:</p>
+                <div class="names">
+                    <ul>
+                        <li><input type="radio" name="nombre" value="Señor Sergio"> Señor Sergio</li>
+                        <li><input type="radio" name="nombre" value="Señora Claudia"> Señora Claudia</li>
+                        <li><input type="radio" name="nombre" value="Señor González"> Señor González</li>
+                        <li><input type="radio" name="nombre" value="Señora Coneha29"> Señora Coneha29</li>
+                        <li><input type="radio" name="nombre" value="Joven Bruno"> Joven Bruno</li>
+                        <li><input type="radio" name="nombre" value="Joven Amanda"> Joven Amanda</li>
+                        <li><input type="radio" name="nombre" value="Señora Teresa de Calcuta"> Señora Teresa de Calcuta</li>
+                    </ul>
+                </div>
+                <button class="button" onclick="enviar()">Enviar</button>
+            </div>
+            <div id="imageContainer" class="image-container">
+                <img src="https://i.pinimg.com/736x/b6/7a/f1/b67af14460346ea9b6cb5f7a7b8d64d0.jpg" alt="Imagen" class="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

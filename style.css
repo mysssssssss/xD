@@ -1,0 +1,98 @@
+body {
+    background-color: #FDE9E9; /* Fondo rosa palo claro */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://th.bing.com/th/id/OIP.GoqQxt73IMhFLgc6_vMgFAHaHa?pid=ImgDet&rs=1');
+    background-repeat: repeat;
+    background-size: 30%; /* Imágenes de fondo más pequeñas */
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #F7F7FA;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+}
+
+.greeting {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.info {
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.locationButton {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Comic Sans MS', cursive;
+    margin-top: 10px; /* Espacio superior entre botones */
+}
+
+.locationButton:hover {
+    background-color: #FF5252;
+}
+
+#rsvpButton {
+    background-color: #2EC4B6;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+#rsvpButton:hover {
+    background-color: #28AEA4;
+}
+
+#cannotButton {
+    background-color: #FF9F1C;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+#cannotButton:hover {
+    background-color: #FF8C00;
+}
+
+.image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
